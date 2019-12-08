@@ -1,0 +1,33 @@
+@import '../../sass/main';
+
+nav {
+  background-color: $theme-space-gray;
+  height: $navigation-height;
+  min-height: $navigation-height;
+  max-height: $navigation-height;
+
+  // reset page dimensions
+  margin: 0;
+  padding: 0;
+  // align the page in the center of the screen
+
+  width: 100%;
+}
+
+.nav-inner-wrapper {
+  @include flex;
+  @include align-items(center);
+  @include margin-auto-horizontal;
+
+  height: 100%;
+
+  @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
+    max-width: $page-width-1920;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
+    max-width: $page-width-2560;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
+    max-width: $page-width-3840;
+  }
+}

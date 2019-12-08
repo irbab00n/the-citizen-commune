@@ -1,0 +1,16 @@
+@import '../../sass/main.scss';
+
+.nav-brand {
+  @include standard-transition;
+  cursor: pointer;
+  color: $theme-nebula;
+  font-size: 28px;
+  text-decoration: none;
+
+  &:hover {
+    color: $theme-nebula-hover;
+  }
+  &:active {
+    color: $theme-nebula-active;
+  }
+}

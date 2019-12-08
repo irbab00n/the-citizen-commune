@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+// * COMPONENTS
+import Nav from './components/Nav';
+import FeatureMenu from './components/FeatureMenu';
+import HeroImage from './components/HeroImage';
+
+// * ROUTING
+import { Route, Router, Switch } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+
+// * PAGES
+import pages from './pages';
+
+import minerWithRailgun from './assets/images/Miner-with-railgun.png';
+
+// * APP HISTORY
+export const history = createBrowserHistory();
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={history}>
+      <Nav />
+      <FeatureMenu />
+      <HeroImage imageURL={minerWithRailgun} />
+
+      <Switch>
+        {pages.map(page => (
+          <Route
+            path={page.endpoint}
+            key={`app-page-${page.name}`}
+            exact={page.exact}
+            render={({ match }) => page.component(match)}
+          />
+        ))}
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;

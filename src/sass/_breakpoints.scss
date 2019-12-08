@@ -1,0 +1,60 @@
+// Standard Breakpoints:  Even increments of 100 pixels
+$breakpoint-standard-100: 100px;
+$breakpoint-standard-200: 200px;
+$breakpoint-standard-300: 300px;
+$breakpoint-standard-400: 400px;
+$breakpoint-standard-500: 500px;
+$breakpoint-standard-600: 600px;
+$breakpoint-standard-700: 700px;
+$breakpoint-standard-800: 800px;
+$breakpoint-standard-900: 900px;
+$breakpoint-standard-1000: 1000px;
+$breakpoint-standard-1100: 1100px;
+$breakpoint-standard-1200: 1200px;
+$breakpoint-standard-1300: 1300px;
+$breakpoint-standard-1400: 1400px;
+$breakpoint-standard-1500: 1500px;
+$breakpoint-standard-1600: 1600px;
+$breakpoint-standard-1700: 1700px;
+$breakpoint-standard-1800: 1800px;
+$breakpoint-standard-1900: 1900px;
+$breakpoint-standard-2000: 2000px;
+
+// Device Width Breakpoints:  Common device width dimensions
+$breakpoint-device-width-320: 320px;
+$breakpoint-device-width-480: 480px;
+$breakpoint-device-width-640: 480px;
+$breakpoint-device-width-768: 768px;
+$breakpoint-device-width-800: 800px;
+$breakpoint-device-width-960: 960px;
+$breakpoint-device-width-1024: 1024px;
+$breakpoint-device-width-1280: 1280px; // HD
+$breakpoint-device-width-1366: 1366px;
+$breakpoint-device-width-1400: 1400px;
+$breakpoint-device-width-1440: 1440px;
+$breakpoint-device-width-1600: 1600px;
+$breakpoint-device-width-1680: 1680px;
+$breakpoint-device-width-1856: 1856px;
+$breakpoint-device-width-1920: 1920px; // FHD
+$breakpoint-device-width-2048: 2048px;
+$breakpoint-device-width-2560: 2560px; // 2K QHD
+$breakpoint-device-width-3840: 3840px; // 4K UHD
+$breakpoint-device-width-5120: 5120px; // 5K UHD
+$breakpoint-device-width-7680: 7680px; // 8K FUHD
+
+// Device Height Breakpoints:  Common device height dimensions
+$breakpoint-device-height-480: 480px;
+$breakpoint-device-height-576: 576px;
+$breakpoint-device-height-600: 600px;
+$breakpoint-device-height-648: 648px;
+$breakpoint-device-height-720: 720px; // HD
+$breakpoint-device-height-768: 768px;
+$breakpoint-device-height-900: 900px;
+$breakpoint-device-height-960: 960px;
+$breakpoint-device-height-1050: 1050px;
+$breakpoint-device-height-1080: 1080px; // FHD
+$breakpoint-device-height-1200: 1200px;
+$breakpoint-device-height-1440: 1440px; // 2K QHD
+$breakpoint-device-height-1600: 1600px;
+$breakpoint-device-height-2160: 2160px; // 4K/5K UHD
+$breakpoint-device-height-4320: 4320px; // 8K FUHD

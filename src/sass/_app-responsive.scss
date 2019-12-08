@@ -1,0 +1,11 @@
+@mixin respond-to-max-breakpoint($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin respond-to-min-breakpoint($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}

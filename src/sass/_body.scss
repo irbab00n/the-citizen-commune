@@ -1,0 +1,10 @@
+@import './colors';
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: $theme-merino-yellow-orange;
+
+  font-family: 'Ubuntu', sans-serif;
+}

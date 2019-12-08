@@ -1,0 +1,25 @@
+// Navigation
+$navigation-height: 60px;
+
+// Feature Sidebar
+$feature-sidebar-width-collapsed: 60px;
+$feature-sidebar-width-expanded: 240px;
+
+// Page Dimensions
+$page-width-1920: 1400px;
+$page-width-2560: 1600px;
+$page-width-3840: 2000px;
+
+$page-min-height: calc(100vh - #{$navigation-height});
+
+@mixin standard-page-responsiveness {
+  @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
+    max-width: $page-width-1920;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
+    max-width: $page-width-2560;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
+    max-width: $page-width-3840;
+  }
+}

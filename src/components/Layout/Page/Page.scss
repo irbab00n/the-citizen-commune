@@ -1,0 +1,24 @@
+@import '../../../sass/main.scss';
+
+.page {
+  // reset page dimensions
+  margin: 0;
+  padding: 0;
+  // align the page in the center of the screen
+  @include margin-auto-horizontal;
+
+  background-color: $theme-sirroco;
+
+  width: 100%;
+  min-height: $page-min-height;
+
+  @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
+    max-width: $page-width-1920;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
+    max-width: $page-width-2560;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
+    max-width: $page-width-3840;
+  }
+}

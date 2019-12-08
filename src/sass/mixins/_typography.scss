@@ -1,0 +1,21 @@
+@mixin heading-1 {
+  font-size: 42px;
+}
+@mixin heading-2 {
+  font-size: 36px;
+}
+@mixin heading-3 {
+  font-size: 28px;
+}
+@mixin heading-4 {
+  font-size: 20px;
+}
+@mixin body-content {
+  font-size: 15px;
+}
+@mixin secondary-content {
+  font-size: 14px;
+}
+@mixin footer-content {
+  font-size: 10px;
+}
