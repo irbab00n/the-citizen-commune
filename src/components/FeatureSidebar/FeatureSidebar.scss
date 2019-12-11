@@ -1,0 +1,120 @@
+@import '../../sass/main';
+
+.feature-sidebar {
+  @include flex-column;
+  @include standard-transition;
+
+  color: $white;
+
+  height: calc(100vh - #{$navigation-height-1920});
+  width: $navigation-height-1920;
+
+  margin-top: $spacing-4;
+  margin-left: $spacing-4;
+
+  &.expanded {
+    width: 400px;
+  }
+
+  & > * {
+    margin-bottom: $spacing-2;
+  }
+
+  @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
+    height: calc(100vh - #{$navigation-height-2560});
+    width: $navigation-height-2560;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
+    height: calc(100vh - #{$navigation-height-3840});
+    width: $navigation-height-3840;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-5120) {
+    height: calc(100vh - #{$navigation-height-5120});
+    width: $navigation-height-5120;
+  }
+}
+
+.feature-sidebar-expand-button {
+  @include flex;
+  @include align-items(center);
+  @include justify-center;
+  @include secondary-content;
+  @include standard-transition;
+  @include nebula-button-secondary;
+  @include standard-shadow;
+  cursor: pointer;
+
+  color: $theme-sirroco;
+
+  height: $navigation-height-1920;
+  overflow: hidden;
+
+  width: 100%;
+
+  &:hover {
+    @include standard-shadow-hover;
+  }
+
+  @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
+    @include heading-4;
+    height: $navigation-height-2560;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
+    @include heading-3;
+    height: $navigation-height-3840;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-5120) {
+    @include heading-2;
+    height: $navigation-height-5120;
+  }
+}
+
+.fade-in-label {
+  @include standard-transition;
+  display: none;
+  opacity: 0;
+  font-size: inherit;
+
+  &.show {
+    display: initial;
+    animation-name: fade-in-label-animation;
+    animation-duration: 1s;
+    opacity: 1;
+    margin-left: $spacing-2;
+  }
+}
+
+@keyframes fade-in-label-animation {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.feature-sidebar-expand-button-icon {
+  @include standard-transition;
+  // @include double-transition;
+
+  &.flipped {
+    transform: rotate(180deg);
+  }
+}
+
+.feature-sidebar-feature-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  & > * {
+    margin-bottom: $spacing-2;
+  }
+}

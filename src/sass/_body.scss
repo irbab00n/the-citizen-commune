@@ -1,10 +1,13 @@
 @import './colors';
+@import './mixins/box-shadow';
 
 body {
   margin: 0;
   padding: 0;
 
   background-color: $theme-merino-yellow-orange;
+  // background-color: $theme-downy-light-blue;
+  // background-color: $theme-sirroco;
 
   font-family: 'Ubuntu', sans-serif;
 }

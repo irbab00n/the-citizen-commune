@@ -4,6 +4,18 @@
   transition: $delay;
 }
 
+@mixin transition-type($type) {
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
 @mixin standard-transition {
-  @include transition(0.2s);
+  @include transition(0.25s);
+  @include transition-type(ease-in-out);
+}
+
+@mixin double-transition {
+  @include transition(0.5s);
+  @include transition-type(ease-in-out);
 }

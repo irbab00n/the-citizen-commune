@@ -2,15 +2,29 @@
 
 .nav-brand {
   @include standard-transition;
+  @include heading-3;
   cursor: pointer;
   color: $theme-nebula;
-  font-size: 28px;
   text-decoration: none;
+  padding-left: $spacing-4;
 
   &:hover {
     color: $theme-nebula-hover;
   }
   &:active {
     color: $theme-nebula-active;
+  }
+
+  @include respond-to-min-breakpoint($breakpoint-device-width-1600) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
+    @include heading-2;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
+    @include heading-1;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-5120) {
   }
 }

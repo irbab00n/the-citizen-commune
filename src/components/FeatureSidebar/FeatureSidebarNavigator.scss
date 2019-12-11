@@ -1,0 +1,90 @@
+@import '../../sass/main';
+
+.feature-sidebar-navigator {
+  @include standard-transition;
+  @include flex;
+  @include blue-button-secondary;
+  @include standard-shadow;
+
+  height: $navigation-height-1920;
+  width: 100%;
+  min-width: $navigation-height-1920;
+  padding-right: $spacing-4;
+
+  &:hover {
+    @include standard-shadow-hover;
+  }
+
+  @include respond-to-min-breakpoint($breakpoint-device-width-1600) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
+    height: $navigation-height-2560;
+    min-width: $navigation-height-2560;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
+    height: $navigation-height-3840;
+    min-width: $navigation-height-3840;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-5120) {
+    height: $navigation-height-5120;
+    min-width: $navigation-height-5120;
+  }
+}
+
+.feature-sidebar-navigator-link {
+  @include flex;
+  @include align-items(center);
+  color: $theme-sirroco;
+  width: 100%;
+  height: 100%;
+  // color: $theme-merino-yellow-orange;
+  text-decoration: none;
+}
+
+.feature-sidebar-navigator-icon {
+  @include flex;
+  @include align-items(center);
+  @include justify-center;
+  @include heading-4;
+
+  margin-left: -4px; // ! important to keep, can be removed if the border is removed from the button
+
+  width: $navigation-height-1920;
+  min-width: $navigation-height-1920;
+
+  @include respond-to-min-breakpoint($breakpoint-device-width-1600) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
+    width: $navigation-height-2560;
+    min-width: $navigation-height-2560;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
+    @include heading-3;
+    width: $navigation-height-3840;
+    min-width: $navigation-height-3840;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-5120) {
+    width: $navigation-height-5120;
+    min-width: $navigation-height-5120;
+  }
+}
+
+.feature-sidebar-navigator-name {
+  @include heading-4;
+
+  @include respond-to-min-breakpoint($breakpoint-device-width-1600) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
+    @include heading-3;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-5120) {
+  }
+}

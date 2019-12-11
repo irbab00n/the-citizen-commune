@@ -11,11 +11,15 @@
   font-size: 20px;
 }
 @mixin body-content {
-  font-size: 15px;
+  font-size: 16px;
 }
 @mixin secondary-content {
   font-size: 14px;
 }
 @mixin footer-content {
-  font-size: 10px;
+  font-size: 12px;
+}
+
+p {
+  @include body-content;
 }

@@ -1,1 +1,8 @@
 @import './sass/main';
+
+#root {
+  @include standard-shadow-inset-hover;
+}
+.app-layout {
+  @include flex;
+}

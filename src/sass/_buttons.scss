@@ -1,0 +1,60 @@
+@mixin red-button {
+  background-color: $theme-flamingo-red;
+  border: none;
+  color: $white;
+
+  &:hover {
+    background-color: $theme-flamingo-red-hover;
+  }
+  &:active {
+    background-color: $theme-flamingo-red-active;
+  }
+}
+
+@mixin nebula-button {
+  background-color: $theme-nebula;
+
+  &:hover {
+    background-color: $theme-nebula-hover;
+  }
+  &:active {
+    background-color: $theme-nebula-active;
+  }
+}
+
+@mixin nebula-button-secondary {
+  background-color: $white-opaque-30;
+  border: 3px solid $theme-nebula-hover;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $theme-nebula-hover;
+  }
+  &:active {
+    background-color: $theme-nebula-active;
+  }
+}
+
+@mixin blue-button {
+  background-color: $theme-downy-light-blue;
+
+  &:hover {
+    background-color: $theme-downy-light-blue-hover;
+  }
+  &:active {
+    background-color: $theme-downy-light-blue-active;
+  }
+}
+
+@mixin blue-button-secondary {
+  background-color: $white-opaque-30;
+  border: 3px solid $theme-downy-light-blue-hover;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $theme-downy-light-blue-hover;
+  }
+  &:active {
+    background-color: $theme-downy-light-blue-active;
+  }
+}

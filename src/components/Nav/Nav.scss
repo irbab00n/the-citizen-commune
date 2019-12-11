@@ -2,9 +2,7 @@
 
 nav {
   background-color: $theme-space-gray;
-  height: $navigation-height;
-  min-height: $navigation-height;
-  max-height: $navigation-height;
+  height: $navigation-height-1920;
 
   // reset page dimensions
   margin: 0;
@@ -12,6 +10,20 @@ nav {
   // align the page in the center of the screen
 
   width: 100%;
+  // @include standard-page-responsiveness;
+  @include respond-to-max-breakpoint($breakpoint-device-width-1600) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
+    height: $navigation-height-2560;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
+    height: $navigation-height-3840;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-5120) {
+    height: $navigation-height-5120;
+  }
 }
 
 .nav-inner-wrapper {
@@ -21,13 +33,15 @@ nav {
 
   height: 100%;
 
+  // @include standard-page-responsiveness;
+  @include respond-to-max-breakpoint($breakpoint-device-width-1600) {
+  }
   @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
-    max-width: $page-width-1920;
   }
   @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
-    max-width: $page-width-2560;
   }
   @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
-    max-width: $page-width-3840;
+  }
+  @include respond-to-min-breakpoint($breakpoint-device-width-5120) {
   }
 }
