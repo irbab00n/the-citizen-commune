@@ -1,4 +1,4 @@
-@mixin red-button {
+@mixin red-button($status: 'none') {
   background-color: $theme-flamingo-red;
   border: none;
   color: $white;
@@ -9,9 +9,16 @@
   &:active {
     background-color: $theme-flamingo-red-active;
   }
+
+  @if ($status == 'lock-hover') {
+    background-color: $theme-flamingo-red-hover !important;
+  }
+  @if ($status == 'lock-active') {
+    background-color: $theme-flamingo-red-active !important;
+  }
 }
 
-@mixin nebula-button {
+@mixin nebula-button($status: 'none') {
   background-color: $theme-nebula;
 
   &:hover {
@@ -20,9 +27,16 @@
   &:active {
     background-color: $theme-nebula-active;
   }
+
+  @if ($status == 'lock-hover') {
+    background-color: $theme-nebula-hover !important;
+  }
+  @if ($status == 'lock-active') {
+    background-color: $theme-nebula-active !important;
+  }
 }
 
-@mixin nebula-button-secondary {
+@mixin nebula-button-secondary($status: 'none') {
   background-color: $white-opaque-30;
   border: 3px solid $theme-nebula-hover;
   border-radius: 5px;
@@ -33,9 +47,16 @@
   &:active {
     background-color: $theme-nebula-active;
   }
+
+  @if ($status == 'lock-hover') {
+    background-color: $theme-nebula-hover !important;
+  }
+  @if ($status == 'lock-active') {
+    background-color: $theme-nebula-active !important;
+  }
 }
 
-@mixin blue-button {
+@mixin blue-button($status: 'none') {
   background-color: $theme-downy-light-blue;
 
   &:hover {
@@ -44,9 +65,16 @@
   &:active {
     background-color: $theme-downy-light-blue-active;
   }
+
+  @if ($status == 'lock-hover') {
+    background-color: $theme-downy-light-blue-hover !important;
+  }
+  @if ($status == 'lock-active') {
+    background-color: $theme-downy-light-blue-active !important;
+  }
 }
 
-@mixin blue-button-secondary {
+@mixin blue-button-secondary($status: 'none') {
   background-color: $white-opaque-30;
   border: 3px solid $theme-downy-light-blue-hover;
   border-radius: 5px;
@@ -56,5 +84,12 @@
   }
   &:active {
     background-color: $theme-downy-light-blue-active;
+  }
+
+  @if ($status == 'lock-hover') {
+    background-color: $theme-downy-light-blue-hover !important;
+  }
+  @if ($status == 'lock-active') {
+    background-color: $theme-downy-light-blue-active !important;
   }
 }

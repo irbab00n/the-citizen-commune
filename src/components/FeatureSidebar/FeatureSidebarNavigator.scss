@@ -9,10 +9,14 @@
   height: $navigation-height-1920;
   width: 100%;
   min-width: $navigation-height-1920;
-  padding-right: $spacing-4;
+  // padding-right: $spacing-4;
 
   &:hover {
     @include standard-shadow-hover;
+  }
+
+  &.selected {
+    @include blue-button-secondary('lock-active');
   }
 
   @include respond-to-min-breakpoint($breakpoint-device-width-1600) {
@@ -54,6 +58,10 @@
   width: $navigation-height-1920;
   min-width: $navigation-height-1920;
 
+  &.selected {
+    color: $theme-flamingo-red-active;
+  }
+
   @include respond-to-min-breakpoint($breakpoint-device-width-1600) {
   }
   @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
@@ -75,6 +83,10 @@
 
 .feature-sidebar-navigator-name {
   @include heading-4;
+
+  &.selected {
+    color: $theme-flamingo-red-active;
+  }
 
   @include respond-to-min-breakpoint($breakpoint-device-width-1600) {
   }

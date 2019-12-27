@@ -1,1 +1,8 @@
 @import '../../../sass/main';
+
+.row {
+  @include flex;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(25, 25, 25, 0.1);
+}
