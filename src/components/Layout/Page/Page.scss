@@ -13,4 +13,12 @@
   min-height: $page-min-height;
 
   @include standard-page-responsiveness;
+
+  & > * {
+    margin-bottom: $spacing-4; // @STANDARD -- Page spacing between elements
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
 }

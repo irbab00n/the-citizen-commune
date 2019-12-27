@@ -1,0 +1,23 @@
+@import '../../../sass/main';
+
+.column {
+  @include flex-column;
+  padding: $spacing-4;
+}
+
+.column-size-1 {
+  width: 100%;
+  background-color: rgba(25, 25, 125, 0.2);
+}
+.column-size-2 {
+  width: 75%;
+  background-color: rgba(25, 125, 25, 0.2);
+}
+.column-size-3 {
+  width: 50%;
+  background-color: rgba(125, 25, 25, 0.2);
+}
+.column-size-4 {
+  width: 25%;
+  background-color: rgba(25, 175, 125, 0.2);
+}

@@ -2,7 +2,12 @@
 
 .row {
   @include flex;
+  @include flex-wrap(wrap);
   width: 100%;
   padding: 20px;
   background-color: rgba(25, 25, 25, 0.1);
+
+  & > *:first-child {
+    margin-top: 0px;
+  }
 }
