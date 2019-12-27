@@ -4,17 +4,17 @@ import './Featured.scss';
 import Row from '../../Layout/Row';
 import Column from '../../Layout/Column';
 
-interface FeaturedArticleProps {
+interface FeaturedGuideProps {
   [key: string]: any;
 }
 
-const FeaturedArticle = (props: FeaturedArticleProps) => {
+const FeaturedGuide = (props: FeaturedGuideProps) => {
   return (
     <Row>
       <h2>Featured</h2>
-      <Column className="FeaturedArticle">Featured Article Container</Column>
+      <Column className="FeaturedGuide">Featured Guide Container</Column>
     </Row>
   );
 };
 
-export default FeaturedArticle;
+export default FeaturedGuide;
