@@ -12,7 +12,11 @@ const Guides: React.FC = () => {
   return (
     <Page>
       <h1>Community Guides</h1>
-      <Search />
+      <Search
+        searchValidator={(term: string) => {
+          return true;
+        }}
+      />
       <Featured />
       <Popular />
       <Topics />

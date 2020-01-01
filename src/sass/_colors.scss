@@ -1,17 +1,3 @@
-// ***** THEME COLORS *****
-$theme-space-gray: #2b3e42;
-$theme-sirroco: #747e80;
-$theme-nebula: #d5e1dd;
-$theme-nebula-hover: #a7e6d2;
-$theme-nebula-active: #8cc7b4;
-$theme-merino-yellow-orange: #f7f3e8;
-$theme-flamingo-red: #f2583e;
-$theme-flamingo-red-hover: #f0715a;
-$theme-flamingo-red-active: #c03820;
-$theme-downy-light-blue: #77bed2;
-$theme-downy-light-blue-hover: #96d4e6;
-$theme-downy-light-blue-active: #4da2b9;
-
 $red-50: #ffebee !default;
 $red-100: #ffcdd2 !default;
 $red-200: #ef9a9a !default;
@@ -527,3 +513,20 @@ $azerite-orange-600: #755000;
 $azerite-orange-700: #583c00;
 $azerite-orange-800: #291c00;
 $azerite-orange-900: #1b1300;
+
+// ***** THEME COLORS *****
+$theme-space-gray: #2b3e42;
+$theme-sirroco: #747e80;
+$theme-nebula: #d5e1dd;
+$theme-nebula-hover: #a7e6d2;
+$theme-nebula-active: #8cc7b4;
+$theme-merino-yellow-orange: #f7f3e8;
+$theme-amber: $amber-400;
+$theme-amber-hover: $amber-200;
+$theme-amber-active: $amber-600;
+$theme-flamingo-red: #f2583e;
+$theme-flamingo-red-hover: #f0715a;
+$theme-flamingo-red-active: #c03820;
+$theme-downy-light-blue: #77bed2;
+$theme-downy-light-blue-hover: #96d4e6;
+$theme-downy-light-blue-active: #4da2b9;

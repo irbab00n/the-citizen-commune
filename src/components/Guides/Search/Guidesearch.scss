@@ -1,0 +1,86 @@
+@import '../../../sass/main';
+
+#GuideSearch_form {
+  @include flex;
+  @include flex-wrap(wrap);
+  @include standard-transition;
+
+  height: 48px;
+  width: 100%;
+  border-radius: 4px;
+
+  &:focus-within {
+    outline: 3px solid rgba(25, 25, 25, 0.08);
+  }
+}
+
+.GuideSearch_form_text_label {
+  width: calc(100% - 150px);
+  height: 100%;
+}
+.GuideSearch_form_text {
+  @include flex;
+  @include standard-transition;
+  background-color: transparent;
+
+  color: $theme-sirroco;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  padding: $spacing-3;
+
+  border: none;
+  border-bottom: 3px solid $theme-nebula;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: rgba(9, 241, 214, 0.041);
+    border-bottom: 3px solid $theme-nebula-hover;
+  }
+  &:focus {
+    background-color: transparent;
+    border-bottom: 3px solid $theme-nebula-active;
+    outline: none;
+  }
+  &.error {
+    background-color: $red-100;
+  }
+  &::placeholder {
+    color: rgba(25, 45, 65, 0.3);
+  }
+}
+
+.GuideSearch_form_button {
+  @include standard-transition;
+  @include nebula-button-secondary;
+  height: 100%;
+  width: 150px;
+
+  color: $theme-sirroco;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  &:focus {
+    @include nebula-button-secondary('lock-hover');
+    outline: none;
+  }
+
+  &:active {
+    @include nebula-button-secondary('lock-active');
+  }
+}
+
+.GuideSearch_error_message {
+  @include flex;
+  @include align-items(center);
+  width: 100%;
+  min-height: 48px;
+  padding-left: $spacing-4;
+
+  color: $red-400;
+}
