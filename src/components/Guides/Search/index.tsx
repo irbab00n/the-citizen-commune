@@ -12,7 +12,9 @@ interface GuideSearchProps {
 const GuideSearch = (props: GuideSearchProps) => {
   const { onSearch = () => {}, searchValidator = () => true } = props;
   const [searchTerm, setSearchTerm] = useState('');
-  const [prevTerm, setPrevTerm] = useState('');
+  const [prevTerm, setPrevTerm] = useState(
+    'Need Help?  Casaba Outlet may be helpful, but so are we ;)'
+  ); // ! Change initial string value to set first placeholder
   const [errorState, setErrorState] = useState(false);
   const [searchErrorMessage, setSearchErrorMessage] = useState('');
 

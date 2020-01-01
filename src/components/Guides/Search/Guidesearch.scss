@@ -5,9 +5,11 @@
   @include flex-wrap(wrap);
   @include standard-transition;
 
-  height: 48px;
+  height: 60px;
   width: 100%;
   border-radius: 4px;
+
+  padding: $spacing-2;
 
   &:focus-within {
     outline: 3px solid rgba(25, 25, 25, 0.08);
@@ -41,15 +43,24 @@
     background-color: rgba(9, 241, 214, 0.041);
     border-bottom: 3px solid $theme-nebula-hover;
   }
+  &:active {
+    background-color: rgba(9, 241, 214, 0.061);
+  }
   &:focus {
     background-color: transparent;
     border-bottom: 3px solid $theme-nebula-active;
     outline: none;
+
+    &::placeholder {
+      color: rgba(25, 45, 65, 0.1);
+    }
   }
   &.error {
     background-color: $red-100;
   }
   &::placeholder {
+    @include standard-transition;
+
     color: rgba(25, 45, 65, 0.3);
   }
 }

@@ -1,0 +1,46 @@
+// Standard <input type="text"/> element appearance
+
+input[type='text'] {
+  @include flex;
+  @include standard-transition;
+  background-color: transparent;
+
+  color: $theme-sirroco;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  padding: $spacing-3;
+
+  border: none;
+  border-bottom: 3px solid $theme-nebula;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: rgba(9, 241, 214, 0.041);
+    border-bottom: 3px solid $theme-nebula-hover;
+  }
+  &:active {
+    background-color: rgba(9, 241, 214, 0.061);
+  }
+  &:focus {
+    background-color: transparent;
+    border-bottom: 3px solid $theme-nebula-active;
+    outline: none;
+
+    &::placeholder {
+      color: rgba(25, 45, 65, 0.1);
+    }
+  }
+  &.error {
+    background-color: $red-100;
+  }
+  &::placeholder {
+    @include standard-transition;
+
+    color: rgba(25, 45, 65, 0.3);
+  }
+}
