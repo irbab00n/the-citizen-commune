@@ -9,12 +9,19 @@ interface GuideSearchProps {
   searchValidator?(term: string): boolean;
 }
 
+// ** DEFAULTS **
+const _placeholderDeafult =
+  'Need Help?  Casaba Outlet may be helpful, but so are we ;)';
+const _onSearchDefault = () => {};
+const _searchValidatorDefault = () => true;
+
 const GuideSearch = (props: GuideSearchProps) => {
-  const { onSearch = () => {}, searchValidator = () => true } = props;
+  const {
+    onSearch = _onSearchDefault,
+    searchValidator = _searchValidatorDefault,
+  } = props;
   const [searchTerm, setSearchTerm] = useState('');
-  const [prevTerm, setPrevTerm] = useState(
-    'Need Help?  Casaba Outlet may be helpful, but so are we ;)'
-  ); // ! Change initial string value to set first placeholder
+  const [prevTerm, setPrevTerm] = useState(_placeholderDeafult);
   const [errorState, setErrorState] = useState(false);
   const [searchErrorMessage, setSearchErrorMessage] = useState('');
 
