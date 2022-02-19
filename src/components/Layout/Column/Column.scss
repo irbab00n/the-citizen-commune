@@ -2,7 +2,7 @@
 
 .column {
   @include flex-column;
-  padding: $spacing-4;
+  padding: $spacing-20;
 }
 
 .column-size-1 {

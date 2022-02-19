@@ -1,0 +1,73 @@
+@import '../../sass/main';
+
+.SidebarNavigation {
+  @include flex-column;
+  @include standard-transition;
+  background-color: $azerite-blue-600;
+
+  color: $black;
+
+  height: calc(100vh - #{$navigation-height-1920});
+  width: $navigation-height-1920;
+
+  padding: 20px 0;
+
+  &.expanded {
+    width: 400px;
+  }
+
+  & > * {
+    margin-bottom: $spacing-10;
+  }
+}
+
+.SidebarNavigation__Toggle {
+  @include flex;
+  @include align-items(center);
+  @include justify-center;
+  @include body-content;
+  @include standard-transition;
+  @include standard-shadow;
+  cursor: pointer;
+  margin-top: auto;
+
+  color: $white;
+  background-color: $azerite-blue-500;
+  border: 1px solid $azerite-blue-300;
+
+  height: $navigation-height-1920;
+  overflow: hidden;
+
+  width: 100%;
+
+  & > * {
+    margin-right: $spacing-tab;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &:hover {
+    @include standard-shadow-hover;
+    background-color: $azerite-blue-300;
+  }
+
+  &:active {
+    background-color: $azerite-blue-600;
+  }
+
+  &:focus {
+    border: 1px solid $azerite-gold-200;
+    outline: none;
+  }
+}
+
+.SidebarNavigation__ToggleIcon {
+  @include standard-transition;
+  // @include double-transition;
+
+  &.flipped {
+    transform: rotate(180deg);
+  }
+}

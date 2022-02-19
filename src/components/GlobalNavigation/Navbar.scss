@@ -1,29 +1,19 @@
 @import '../../sass/main';
 
-nav {
-  background-color: $theme-space-gray;
-  height: $navigation-height-1920;
+.Navbar {
+  background-color: $azerite-blue-800;
+}
 
+nav {
+  @include flex;
+  @include align-items(center);
+  @include standard-shadow;
+
+  height: $navigation-height-1920;
   // reset page dimensions
-  margin: 0;
+  margin: 0 $spacing-40;
   padding: 0;
   // align the page in the center of the screen
-
-  width: 100%;
-  // @include standard-page-responsiveness;
-  @include respond-to-max-breakpoint($breakpoint-device-width-1600) {
-  }
-  @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
-  }
-  @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
-    height: $navigation-height-2560;
-  }
-  @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
-    height: $navigation-height-3840;
-  }
-  @include respond-to-min-breakpoint($breakpoint-device-width-5120) {
-    height: $navigation-height-5120;
-  }
 }
 
 .nav-inner-wrapper {

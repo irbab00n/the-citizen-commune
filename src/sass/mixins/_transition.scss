@@ -5,17 +5,17 @@
 }
 
 @mixin transition-type($type) {
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
+  -webkit-transition-timing-function: $type;
+  -o-transition-timing-function: $type;
+  transition-timing-function: $type;
 }
 
 @mixin standard-transition {
-  @include transition(0.25s);
+  @include transition(150ms);
   @include transition-type(ease-in-out);
 }
 
-@mixin double-transition {
-  @include transition(0.5s);
+@mixin extended-transition {
+  @include transition(300ms);
   @include transition-type(ease-in-out);
 }

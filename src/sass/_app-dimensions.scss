@@ -1,8 +1,8 @@
 // Navigation
-$navigation-height-1920: 60px;
-$navigation-height-2560: 80px;
-$navigation-height-3840: 100px;
-$navigation-height-5120: 120px;
+$navigation-height-1920: 64px;
+$navigation-height-2560: 64px;
+$navigation-height-3840: 64px;
+$navigation-height-5120: 64px;
 
 // Feature Sidebar
 $feature-sidebar-width-collapsed: 60px;
@@ -19,14 +19,18 @@ $page-min-height: calc(100vh - #{$navigation-height-1920});
 @mixin standard-page-responsiveness {
   @include respond-to-min-breakpoint($breakpoint-device-width-1600) {
     max-width: $page-width-1600;
+    max-height: calc(100vh - $navigation-height-1920);
   }
   @include respond-to-min-breakpoint($breakpoint-device-width-1920) {
     max-width: $page-width-1920;
+    max-height: calc(100vh - $navigation-height-1920);
   }
   @include respond-to-min-breakpoint($breakpoint-device-width-2560) {
     max-width: $page-width-2560;
+    max-height: calc(100vh - $navigation-height-2560);
   }
   @include respond-to-min-breakpoint($breakpoint-device-width-3840) {
     max-width: $page-width-3840;
+    max-height: calc(100vh - $navigation-height-3840);
   }
 }

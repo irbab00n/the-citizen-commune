@@ -1,21 +1,21 @@
 @import '../../../sass/main.scss';
 
 .page {
+  background-color: $white;
   // reset page dimensions
   margin: 0;
-  padding: $spacing-4;
+  padding: $spacing-20;
   // align the page in the center of the screen
   @include margin-auto-horizontal;
 
   // background-color: $theme-sirroco;
 
   width: 100%;
-  min-height: $page-min-height;
 
   @include standard-page-responsiveness;
 
   & > * {
-    margin-bottom: $spacing-4; // @STANDARD -- Page spacing between elements
+    margin-bottom: $spacing-20; // @STANDARD -- Page spacing between elements
 
     &:last-child {
       margin-bottom: 0px;

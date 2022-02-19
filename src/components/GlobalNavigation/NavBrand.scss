@@ -4,15 +4,15 @@
   @include standard-transition;
   @include heading-3;
   cursor: pointer;
-  color: $theme-nebula;
+  color: $white;
   text-decoration: none;
-  padding-left: $spacing-4;
+  padding-left: $spacing-20;
 
   &:hover {
-    color: $theme-nebula-hover;
+    color: $blue-600;
   }
   &:active {
-    color: $theme-nebula-active;
+    color: $blue-800;
   }
 
   @include respond-to-min-breakpoint($breakpoint-device-width-1600) {
